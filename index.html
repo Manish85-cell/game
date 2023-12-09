@@ -84,7 +84,7 @@
             return (
                 <div>
                     <div id = "prob" className={state.incorrect ? "incorrect":""}>{state.num1}+{state.num2}</div>
-                    <input onKeyPress={inputKeyPress} onChange={updateResponse} value={state.response} id = "inp" autoFocus={true}/>
+                    <input onKeyPress={inputKeyPress} onChange={updateResponse} value={state.response} id = "inp" autoFocus={true} autoComplete={false}/>
                     <div>Score: {state.score}</div>
                 </div>
             );
